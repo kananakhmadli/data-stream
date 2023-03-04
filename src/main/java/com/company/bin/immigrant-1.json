@@ -1,0 +1,167 @@
+[
+  {
+    "active": true,
+    "document": {
+      "active": null,
+      "docType": "PRC",
+      "documentNumber": "5589167",
+      "expiryDate": {
+        "date": "2024-05-06",
+        "dateEx": "2024-05-06"
+      },
+      "id": 0,
+      "issuingCountry": {
+        "active": true,
+        "comments": "Import ",
+        "id": 114,
+        "nameAz": "Azərbaycan Respublikası",
+        "nameEn": "Azerbaijan Republic",
+        "code2A": "AZ",
+        "code3A": "AZE",
+        "nameShortAz": "AZƏRBAYCAN",
+        "nameShortEn": "AZERBAIJAN"
+      },
+      "issuingDate": {
+        "date": "2022-05-06",
+        "dateEx": "2022-05-06"
+      },
+      "mainDocument": null,
+      "nationality": {
+        "active": true,
+        "comments": "Import ",
+        "id": 180,
+        "nameAz": "Republic of Georgia",
+        "nameEn": "Republic of Georgia",
+        "code2A": "GE",
+        "code3A": "GEO",
+        "nameShortAz": "GÜRCÜSTAN",
+        "nameShortEn": "GEORGIA"
+      }
+    },
+    "address": {
+      "flat": "49",
+      "house": "40",
+      "place": "Nizami rayonu",
+      "regionId": 10,
+      "regionName": "Bakı",
+      "section": null,
+      "street": "Qara Qarayev prospekti"
+    },
+    "image": null,
+    "imageFormat": null,
+    "passport": {
+      "active": null,
+      "docType": "PASSPORT",
+      "documentNumber": "15BB64706",
+      "expiryDate": {
+        "date": "2026-10-26",
+        "dateEx": "2026-10-26"
+      },
+      "id": 0,
+      "issuingCountry": {
+        "active": true,
+        "comments": "Import ",
+        "id": 180,
+        "nameAz": "Republic of Georgia",
+        "nameEn": "Republic of Georgia",
+        "code2A": "GE",
+        "code3A": "GEO",
+        "nameShortAz": "GÜRCÜSTAN",
+        "nameShortEn": "GEORGIA"
+      },
+      "issuingDate": {
+        "date": "2016-10-26",
+        "dateEx": "2016-10-26"
+      },
+      "mainDocument": null,
+      "nationality": null
+    },
+    "person": {
+      "active": false,
+      "address": null,
+      "birthCity": null,
+      "birthCountry": {
+        "active": true,
+        "comments": "Import ",
+        "id": 180,
+        "nameAz": "Republic of Georgia",
+        "nameEn": "Republic of Georgia",
+        "code2A": "GE",
+        "code3A": "GEO",
+        "nameShortAz": "GÜRCÜSTAN",
+        "nameShortEn": "GEORGIA"
+      },
+      "birthDate": {
+        "date": "1975-04-29",
+        "dateEx": "1975-04-29"
+      },
+      "bloodType": null,
+      "deathDate": null,
+      "entryLanguage": "AZ",
+      "eyeColor": null,
+      "givenName": "ELCHIN",
+      "height": null,
+      "iamasAddress": null,
+      "id": 0,
+      "images": [],
+      "patronymic": null,
+      "pin": null,
+      "prevSurname": null,
+      "sex": "MALE",
+      "surname": "ISAEV",
+      "urisAddress": null
+    },
+    "personEn": {
+      "active": false,
+      "address": null,
+      "birthCity": null,
+      "birthCountry": {
+        "active": true,
+        "comments": "Import ",
+        "id": 180,
+        "nameAz": "Republic of Georgia",
+        "nameEn": "Republic of Georgia",
+        "code2A": "GE",
+        "code3A": "GEO",
+        "nameShortAz": "GÜRCÜSTAN",
+        "nameShortEn": "GEORGIA"
+      },
+      "birthDate": {
+        "date": "1975-04-29",
+        "dateEx": "1975-04-29"
+      },
+      "bloodType": null,
+      "deathDate": null,
+      "entryLanguage": "EN",
+      "eyeColor": null,
+      "givenName": "ELCHIN",
+      "height": null,
+      "iamasAddress": null,
+      "id": 0,
+      "images": [],
+      "patronymic": null,
+      "pin": null,
+      "prevSurname": null,
+      "sex": "MALE",
+      "surname": "ISAEV",
+      "urisAddress": null
+    },
+    "socialStatus": {
+      "allForeignCitizens": null,
+      "maritalStatus": null,
+      "militaryStatus": null,
+      "nationality": {
+        "active": true,
+        "comments": "Import ",
+        "id": 180,
+        "nameAz": "Republic of Georgia",
+        "nameEn": "Republic of Georgia",
+        "code2A": "GE",
+        "code3A": "GEO",
+        "nameShortAz": "GÜRCÜSTAN",
+        "nameShortEn": "GEORGIA"
+      }
+    },
+    "vmmsPin": "3AXK0G"
+  }
+]
