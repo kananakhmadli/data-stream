@@ -50,7 +50,7 @@ dependencies {
 }
 
 generateAvroJava {
-    source("${projectDir}/src/main/resources/avro")//sourcepath avrofile
+    source("${projectDir}/src/main/resources/avro") //sourcepath avrofile
 }
 
 avro {
@@ -69,4 +69,22 @@ jar {
 
 wrapper {
     gradleVersion = '7.3.2'
+}
+
+task myTask {
+    description "This task is consider to print lib version"
+    println "Hey your lib version is ${libCommonVersion}"
+}
+
+task task2(dependsOn: myTask) {
+    description "This task is consider to print lib version"
+    println "Hey your oracle version is ${oracleJdbcVersion}"
+}
+
+task mainTask {
+    dependsOn(clean, build)
+//    dependsOn(build)
+    tasks.findByName('build').mustRunAfter 'clean'
+    description "This task is consider to print lib version"
+    println "Hey your oracle version is ${oracleJdbcVersion}"
 }

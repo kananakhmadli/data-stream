@@ -1,6 +1,6 @@
 package com.company.messaging.producer;
 
-import com.company.messaging.Event;
+import com.company.messaging.events.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -15,15 +15,17 @@ public class AvroProducer {
     private String topicName;
 
     @Autowired
-    private KafkaTemplate<String, Event> kafkaTemplate;
+    private KafkaTemplate<String, Document> kafkaTemplate;
 
-    public void send(Event event) {
-        var future = kafkaTemplate.send(topicName, String.valueOf(event.getID()), event);
+    public void send(Document event) {
+        var future = kafkaTemplate.send(topicName, String.valueOf(event.getDOCNO()), event);
+
         future.addCallback(new ListenableFutureCallback<>() {
             @Override
-            public void onSuccess(SendResult<String, Event> result) {
+            public void onSuccess(SendResult<String, Document> result) {
                 System.out.println("Avro message successfully produced");
             }
+
             @Override
             public void onFailure(Throwable ex) {
                 System.out.println("Message failed to produce");

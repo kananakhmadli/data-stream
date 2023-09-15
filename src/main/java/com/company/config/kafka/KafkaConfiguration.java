@@ -1,6 +1,6 @@
 package com.company.config.kafka;
 
-import com.company.messaging.Event;
+import com.company.messaging.events.Document;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,13 +14,13 @@ import org.springframework.kafka.listener.ConcurrentMessageListenerContainer;
 public class KafkaConfiguration {
 
     @Bean
-    public ConsumerFactory<String, Event> consumerFactory(KafkaProperties kafkaProperties) {
+    public ConsumerFactory<String, Document> consumerFactory(KafkaProperties kafkaProperties) {
         return new DefaultKafkaConsumerFactory<>(kafkaProperties.buildConsumerProperties());
     }
 
     @Bean
-    public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, Event>> kafkaListenerContainerFactory(KafkaProperties kafkaProperties) {
-        ConcurrentKafkaListenerContainerFactory<String, Event> factory = new ConcurrentKafkaListenerContainerFactory<String, Event>();
+    public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, Document>> kafkaListenerContainerFactory(KafkaProperties kafkaProperties) {
+        ConcurrentKafkaListenerContainerFactory<String, Document> factory = new ConcurrentKafkaListenerContainerFactory<String, Document>();
         factory.setConsumerFactory(consumerFactory(kafkaProperties));
         return factory;
     }

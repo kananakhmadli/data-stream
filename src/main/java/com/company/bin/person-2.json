@@ -1,8 +1,0 @@
-
-{
-  "subject": "operation-value",
-  "version": 1,
-  "id": 1,
-  "schema": "{\"type\":\"record\",\"name\":\"Event\",\"namespace\":\"com.company.messaging.events\",\"fields\":[{\"name\":\"op_type\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"ID\",\"type\":[\"long\"],\"default\":-1},{\"name\":\"ID_isMissing\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"AGGREGATE_TYPE\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"AGGREGATE_TYPE_isMissing\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"AGGREGATE_ID\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"AGGREGATE_ID_isMissing\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"TYPE\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"TYPE_isMissing\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"PAYLOAD\",\"type\":[\"null\",{\"type\":\"string\",\"avro.java.string\":\"String\"}],\"default\":null},{\"name\":\"PAYLOAD_isMissing\",\"type\":[\"null\",\"boolean\"],\"default\":null}]}",
-  "deleted": false
-}

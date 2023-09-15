@@ -1,93 +1,54 @@
 [
   {
     "type": "record",
-    "name": "Event",
+    "name": "Document",
     "namespace": "com.company.messaging.events",
     "fields": [
       {
-        "name": "op_type",
+        "name": "BRANCH",
         "type": [
           "null",
-          "string"
+          "int"
         ],
         "default": null
       },
       {
-        "name": "ID",
+        "name": "DOCTYPE",
         "type": [
+          "null",
+          "int"
+        ],
+        "default": null
+      },
+      {
+        "name": "DOCNO",
+        "type": [
+          "null",
           "long"
         ],
-        "default": -1
+        "default": null
       },
       {
-        "name": "ID_isMissing",
+        "name": "OLDDOCNO",
         "type": [
           "null",
-          "boolean"
+          "long"
         ],
         "default": null
       },
       {
-        "name": "AGGREGATE_TYPE",
+        "name": "NEWDOCNO",
+        "type": [
+          "null",
+          "long"
+        ],
+        "default": null
+      },
+      {
+        "name": "OPDATE",
         "type": [
           "null",
           "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "AGGREGATE_TYPE_isMissing",
-        "type": [
-          "null",
-          "boolean"
-        ],
-        "default": null
-      },
-      {
-        "name": "AGGREGATE_ID",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "AGGREGATE_ID_isMissing",
-        "type": [
-          "null",
-          "boolean"
-        ],
-        "default": null
-      },
-      {
-        "name": "TYPE",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "TYPE_isMissing",
-        "type": [
-          "null",
-          "boolean"
-        ],
-        "default": null
-      },
-      {
-        "name": "PAYLOAD",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "PAYLOAD_isMissing",
-        "type": [
-          "null",
-          "boolean"
         ],
         "default": null
       }
