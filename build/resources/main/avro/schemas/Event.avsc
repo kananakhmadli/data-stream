@@ -1,57 +1,220 @@
-[
-  {
-    "type": "record",
-    "name": "Document",
-    "namespace": "com.company.messaging.events",
-    "fields": [
-      {
-        "name": "BRANCH",
-        "type": [
-          "null",
-          "int"
-        ],
-        "default": null
-      },
-      {
-        "name": "DOCTYPE",
-        "type": [
-          "null",
-          "int"
-        ],
-        "default": null
-      },
-      {
-        "name": "DOCNO",
-        "type": [
-          "null",
-          "long"
-        ],
-        "default": null
-      },
-      {
-        "name": "OLDDOCNO",
-        "type": [
-          "null",
-          "long"
-        ],
-        "default": null
-      },
-      {
-        "name": "NEWDOCNO",
-        "type": [
-          "null",
-          "long"
-        ],
-        "default": null
-      },
-      {
-        "name": "OPDATE",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      }
-    ]
-  }
-]
+{
+  "type": "record",
+  "name": "TLG",
+  "namespace": "KB",
+  "fields": [
+    {
+      "name": "ID",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "PROFILEID",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "PROFILETITLE",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "TRANNUMBER",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "TYPE",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "TIME",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "ORIGTIME",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "TERMNAME",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "TERMSIC",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "TERMCOUNTRY",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "TERMLOCATION",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "TRANCODE",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    },
+    {
+      "name": "TERMOWNER",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "TERMRETAILERNAME",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "REVREQUESTID",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "PREVTRAN",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "POSCONDITION",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "EXCHANGERATEACCT",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "AMOUNT",
+      "type": [
+        "null",
+        "double"
+      ],
+      "default": null
+    },
+    {
+      "name": "PAN",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "VIRTUALPAN",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "TIN",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "CUSTOMER",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "CUSTOMER",
+          "fields": [
+            {
+              "name": "PIN",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "PHONENUMBER",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            },
+            {
+              "name": "UMICOID",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      ],
+      "default": null
+    }
+  ]
+}
