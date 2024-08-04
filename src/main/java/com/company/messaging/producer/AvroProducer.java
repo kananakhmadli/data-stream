@@ -1,6 +1,6 @@
 package com.company.messaging.producer;
 
-import KB.TLG;
+import AKH.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -15,14 +15,14 @@ public class AvroProducer {
     private String topicName;
 
     @Autowired
-    private KafkaTemplate<String, TLG> kafkaTemplate;
+    private KafkaTemplate<String, Event> kafkaTemplate;
 
-    public void send(TLG event) {
+    public void send(Event event) {
         var future = kafkaTemplate.send(topicName, String.valueOf(event.getID()), event);
 
         future.addCallback(new ListenableFutureCallback<>() {
             @Override
-            public void onSuccess(SendResult<String, TLG> result) {
+            public void onSuccess(SendResult<String, Event> result) {
                 System.out.println("Avro message successfully produced");
             }
 
