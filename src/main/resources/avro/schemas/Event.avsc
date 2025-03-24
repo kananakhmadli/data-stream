@@ -1,96 +1,23 @@
-[
-  {
-    "type": "record",
-    "name": "Event",
-    "namespace": "com.company.messaging.events",
-    "fields": [
-      {
-        "name": "op_type",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "ID",
-        "type": [
-          "long"
-        ],
-        "default": -1
-      },
-      {
-        "name": "ID_isMissing",
-        "type": [
-          "null",
-          "boolean"
-        ],
-        "default": null
-      },
-      {
-        "name": "AGGREGATE_TYPE",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "AGGREGATE_TYPE_isMissing",
-        "type": [
-          "null",
-          "boolean"
-        ],
-        "default": null
-      },
-      {
-        "name": "AGGREGATE_ID",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "AGGREGATE_ID_isMissing",
-        "type": [
-          "null",
-          "boolean"
-        ],
-        "default": null
-      },
-      {
-        "name": "TYPE",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "TYPE_isMissing",
-        "type": [
-          "null",
-          "boolean"
-        ],
-        "default": null
-      },
-      {
-        "name": "PAYLOAD",
-        "type": [
-          "null",
-          "string"
-        ],
-        "default": null
-      },
-      {
-        "name": "PAYLOAD_isMissing",
-        "type": [
-          "null",
-          "boolean"
-        ],
-        "default": null
-      }
-    ]
-  }
-]
+{
+  "type": "record",
+  "name": "Event",
+  "namespace": "AKH",
+  "fields": [
+    {
+      "name": "ID",
+      "type": [
+        "null",
+        "long"
+      ],
+      "default": null
+    },
+    {
+      "name": "MESSAGE",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

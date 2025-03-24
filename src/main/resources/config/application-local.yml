@@ -19,27 +19,28 @@ spring:
     consul:
       enabled: false
   kafka:
-    bootstrap-servers: "127.0.0.1:9092"
-    producer:
-      keySerializer: "org.apache.kafka.common.serialization.StringSerializer"
-      valueSerializer: "io.confluent.kafka.serializers.KafkaAvroSerializer"
-      properties:
-        schema:
-          registry:
-            url: "http://localhost:8083"
+    bootstrap-servers: "10.120.5.17:9094"
+#    producer:
+#      keySerializer: "org.apache.kafka.common.serialization.StringSerializer"
+#      valueSerializer: "io.confluent.kafka.serializers.KafkaAvroSerializer"
+#      properties:
+#        schema:
+#          registry:
+#            url: "http://localhost:8083"
     consumer:
-      group-id: "spring-boot-avro-consumer-id"
+      group-id: "spring-boot-avro-consumer-id21"
       keyDeserializer: "org.apache.kafka.common.serialization.StringDeserializer"
-      valueDeserializer: "io.confluent.kafka.serializers.KafkaAvroDeserializer"
+#      valueDeserializer: "io.confluent.kafka.serializers.KafkaAvroDeserializer"
+      valueDeserializer: "org.apache.kafka.common.serialization.StringDeserializer"
       autoOffsetReset: "earliest"
-      properties:
-        schema:
-          registry:
-            url: "http://localhost:8083"
-        specific:
-          avro:
-            reader: "true"
+#      properties:
+#        schema:
+#          registry:
+#            url: "http://localhost:8083"
+#        specific:
+#          avro:
+#            reader: "true"
 
 avro:
   topic:
-    name: "operation"
+    name: "TEST"

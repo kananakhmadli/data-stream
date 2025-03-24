@@ -1,7 +1,7 @@
 package com.company.controller;
 
-import com.company.messaging.events.AggregateDto;
-import com.company.messaging.Event;
+import AKH.Event;
+import com.company.messaging.events.DocumentDto;
 import com.company.messaging.producer.AvroProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,14 +17,10 @@ public class AvroController {
     private AvroProducer avroProducer;
 
     @PostMapping(value = "/produce")
-    public void produce(@RequestBody AggregateDto aggregateDto) {
+    public void produce(@RequestBody DocumentDto documentDto) {
         Event event = Event.newBuilder()
-                .setOpType(aggregateDto.getOpType())
-                .setID(aggregateDto.getId())
-                .setAGGREGATEID(aggregateDto.getAggregateId())
-                .setPAYLOAD(aggregateDto.getPayload())
-                .setTYPE(aggregateDto.getType())
-                .setAGGREGATETYPE(aggregateDto.getAggregateType())
+                .setID(documentDto.getId())
+                .setMESSAGE("Test")
                 .build();
         avroProducer.send(event);
     }
